@@ -1,4 +1,3 @@
-const http = require('http');
 const express = require('express');
 const fs = require('fs');
 const bodyParser = require('body-parser');
@@ -12,10 +11,6 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
-
-
-
-const moiveList = require("./movies");
 
 const port = process.env.PORT || 9090;
 
